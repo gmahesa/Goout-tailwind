@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  nav ul li a {
+    @apply text-base leading-6 font-normal text-[#9C9C9C];
+  }
+  .tagline {
+    @apply font-bold text-[52px] leading-[78px] text-t-black;
+  }
+  .desc {
+    @apply text-t-grey font-normal text-base leading-[30px];
+  }
+  .blue-title {
+    @apply text-c-blue font-semibold text-base leading-[22.4px] mb-3;
+  }
+  .black-title {
+    @apply text-t-black font-semibold text-4xl leading-[50.4px] mb-3;
+  }
+  .small-black-title {
+    @apply text-t-black font-semibold text-xl leading-[30px];
+  }
+  .search-title {
+    @apply text-t-black font-medium text-lg leading-[27px];
+  }
+  .btn {
+    @apply py-3 px-[25px] font-medium text-lg leading-7 rounded-xl;
+  }
+  .search-btn {
+    @apply py-3 px-[25px] font-medium text-lg leading-7;
+  }
+  .blue-btn {
+    @apply bg-c-blue text-white;
+  }
+  .grey-btn {
+    @apply bg-white text-t-grey;
+  }
+  .white-btn {
+    @apply bg-white text-c-blue;
+  }
+  .light-blue-btn {
+    @apply bg-[#466bf31a] text-c-blue;
+  }
+  .hov-img {
+    @apply outline outline-4 outline-c-blue outline-offset-8 rounded-3xl;
+  }
+  .gradient-black {
+    @apply bg-gradient-to-b from-transparent via-transparent to-black;
+  }
+  .card {
+    @apply bg-white rounded-3xl shadow-lg;
+  }
+  .card figcaption {
+    @apply p-4 grid gap-4;
+  }
+  .card-info {
+    @apply flex justify-between items-center;
+  }
+  .copyright {
+    @apply text-white font-normal text-base leading-6;
+  }
+  .footer-menu-title {
+    @apply text-white font-medium text-base leading-6;
+  }
+  .footer-menu a {
+    @apply text-t-footer font-normal text-base leading-6;
+  }
+}
+
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+section {
+  margin-block: 7rem;
+}

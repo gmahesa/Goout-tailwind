@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="mx-auto xl:w-11/12 lg:w-11/12 max-lg:px-4 border-gray-200 px-2 py-2.5 rounded dark:bg-gray-900 mx-auto my-4">
+      <div class="container flex flex-wrap items-center justify-between mx-auto">
+        <a href="#" class="flex items-center">
+          <img src="src/images/logo.png" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" class="btn text-c-blue bg-gray-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-xl mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            My Account
+          </button>
+          <button
+            data-collapse-toggle="navbar-cta"
+            type="button"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-cta"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+          <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <li>
+              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-c-blue rounded md:bg-transparent md:text-c-blue md:p-0 dark:text-white" aria-current="page">Home</a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Flight</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Hotel</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Travel Packages</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="mx-auto xl:w-11/12 lg:w-11/12 max-lg:px-4 relative bg-bg-color rounded-3xl overflow-hidden">
+      <div class="hero relative flex flex-col p-[3%] pt-[8%] gap-16 z-20">
+        <div class="hero-text flex flex-col justify-center w-1/2 px-4">
+          <h1 class="capitalize tagline">Find The Best Place to Stress Release</h1>
+          <p class="desc">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</p>
+        </div>
+
+        <div class="hero-search w-full">
+          <div class="search-option bg-white rounded-t-xl w-fit">
+            <button class="search-btn blue-btn rounded-tl-lg">Flight</button>
+            <button class="search-btn white-btn rounded-tr-lg">Hotel</button>
+          </div>
+          <div class="search bg-white w-full inline-flex flex-wrap justify-between shadow-xl px-[30px] py-[28px] rounded-bl-3xl rounded-br-3xl rounded-tr-3xl">
+            <div class="search-card inline-flex w-fit">
+              <div class="flex items-center">
+                <img src="src/images/loc.png" alt="" />
+              </div>
+              <div class="pl-4 pr-7">
+                <p class="search-title">NTB, Lombok</p>
+                <p class="desc">Select the location</p>
+              </div>
+              <div class="flex items-center">
+                <img src="src/images/Union.png" alt="Union icon" />
+              </div>
+            </div>
+            <div class="search-card inline-flex w-fit">
+              <div class="flex items-center">
+                <img src="src/images/date.png" alt="" />
+              </div>
+              <div class="pl-4 pr-7">
+                <p class="search-title">9 Juni 2022</p>
+                <p class="desc">Choose Flight Date</p>
+              </div>
+              <div class="flex items-center">
+                <img src="src/images/Union.png" alt="Union icon" />
+              </div>
+            </div>
+            <div class="search-card inline-flex w-fit">
+              <div class="flex items-center">
+                <img src="src/images/seat.png" alt="" />
+              </div>
+              <div class="pl-4 pr-7">
+                <p class="search-title">Economy</p>
+                <p class="desc">Choose Flight type</p>
+              </div>
+              <div class="flex items-center">
+                <img src="src/images/Union.png" alt="Union icon" />
+              </div>
+            </div>
+            <div class="search-card inline-flex w-fit">
+              <div>
+                <button class="btn blue-btn inline-flex"><img class="mr-2" src="src/images/search.png" alt="search icon" /> Search flight</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-0 h-full w-1/2 top-0 z-10 bg-no-repeat bg-cover rounded-3xl" style="background-image: url(src/images/hero-banner.png)">
+        <!-- <img src="src/images/hero-banner.png" alt="" /> -->
+      </div>
+    </header>
+
+    <section id="service" class="mx-auto xl:w-11/12 lg:w-11/12 max-lg:px-4 bg-bg-color p-[4%] rounded-3xl">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+        <div class="flex flex-col justify-center max-md:text-center">
+          <h2 class="capitalize blue-title">Our Service</h2>
+          <h3 class="capitalize black-title">We Offer Best Service</h3>
+        </div>
+        <div class="grid lg:col-span-2 lg:grid-cols-2 gap-16 pl-8 md:grid-cols-1 mt-8 pl-0">
+          <div class="inline-flex max-md:mx-auto">
+            <div>
+              <img src="src/images/wheather.png" alt="weather" />
+            </div>
+            <div>
+              <h3>Calculated Weather</h3>
+              <p>A new way to travel by air the easy and fast way.</p>
+            </div>
+          </div>
+          <div class="inline-flex max-md:mx-auto">
+            <div>
+              <img src="src/images/flight.png" alt="flight" />
+            </div>
+            <div>
+              <h3>Best Experience Flight</h3>
+              <p>A new way to travel by air the easy and fast way.</p>
+            </div>
+          </div>
+          <div class="inline-flex max-md:mx-auto">
+            <div>
+              <img src="src/images/place.png" alt="place" />
+            </div>
+            <div>
+              <h3>Best Place to Stay</h3>
+              <p>A new way to travel by air the easy and fast way.</p>
+            </div>
+          </div>
+          <div class="inline-flex max-md:mx-auto">
+            <div>
+              <img src="src/images/hand.png" alt="hand" />
+            </div>
+            <div>
+              <h3>Easy-To-Use</h3>
+              <p>A new way to travel by air the easy and fast way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="package" class="flex flex-wrap-reverse mx-auto xl:w-11/12 lg:w-11/12 max-lg:px-4 justify-evenly items-center">
+      <div class="grid grid-cols-2 gap-[6%] xl:max-w-xl lg:max-w-lg">
+        <div class="hover:hov-img w-fit">
+          <figure class="relative rounded-3xl overflow-hidden">
+            <img class="" src="src/images/trip img.png" alt="trip" />
+            <figcaption class="absolute flex flex-col bottom-0 p-6 text-white justify-end h-full w-full gradient-black">
+              <p></p>
+              <p>Greatest Tower</p>
+              <p>Bali, Indonesia</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="hover:hov-img w-fit">
+          <figure class="relative rounded-3xl overflow-hidden">
+            <img class="" src="src/images/trip img2.png" alt="trip" />
+            <figcaption class="absolute flex flex-col bottom-0 p-6 text-white justify-end h-full w-full gradient-black">
+              <p></p>
+              <p>Greatest Tower</p>
+              <p>Bali, Indonesia</p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-center text-center mb-10 xl:max-w-md lg:text-left lg:max-w-sm lg:mb-0">
+        <h2 class="blue-title">Our Package</h2>
+        <h3 class="black-title">Popular Trip Packages</h3>
+        <p class="desc">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</p>
+        <div class="inline-flex flex-wrap gap-5 my-5 max-lg:mx-auto">
+          <div>
+            <p class="small-black-title">120+</p>
+            <p class="desc">Destination</p>
+          </div>
+          <div>
+            <p class="small-black-title">560+</p>
+            <p class="desc">Luxury Hotels</p>
+          </div>
+          <div>
+            <p class="small-black-title">135K+</p>
+            <p class="desc">Happy Tourist</p>
+          </div>
+        </div>
+        <div class="">
+          <button class="btn blue-btn mr-5">Choose Package</button>
+          <button class="btn grey-btn">View More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="destinations" class="mx-auto xl:w-11/12 lg:w-11/12 max-lg:px-4">
+      <div class="text-center">
+        <h2 class="black-title">Explore Natural Destinations</h2>
+        <h3 class="desc max-w-[389px] mx-auto">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</h3>
+      </div>
+      <div class="flex flex-row flex-wrap gap-6 place-content-center my-14">
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="card">
+          <figure>
+            <div class="relative aspect-square">
+              <span class="absolute flex top-2 right-2 py-1 px-4 backdrop-blur-lg text-white rounded-3xl"><img src="src/images/Star.svg" alt="" /> 5.0</span>
+              <img class="object-cover" src="src/images/des1.png" alt="" />
+            </div>
+            <figcaption>
+              <div>
+                <h4 class="small-black-title">Watefall Haven</h4>
+                <p class="desc">selajan, Iceland</p>
+              </div>
+              <div class="card-info">
+                <span class="small-black-title">$9<span class="desc">/Person</span></span
+                ><button class="btn blue-btn">Book</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <button class="btn btn-grey border border-t-grey rounded-full mx-auto">View More</button>
+      </div>
+    </section>
+
+    <section id="user" class="mx-auto xl:w-11/12 lg:w-11/12">
+      <div class="pt-[64px] px-[64px] max-md:px-[50px]">
+        <div class="relative bg-cover rounded-3xl text-center py-[75px]" style="background-image: url(src/images/footer-banner.png)">
+          <img class="absolute -top-16 -right-16" src="src/images/heart.png" alt="" />
+          <div class="flex flex-col items-center max-w-[508px] mx-auto">
+            <h2 class="blue-title">New User</h2>
+            <h3 class="black-title">Dont Miss The 50% Discount If You Register Today</h3>
+            <p class="desc text-t-black">Let's maximize your next holiday with us with the best experience.</p>
+            <button class="btn blue-btn w-fit mt-5">Register Account</button>
+          </div>
+          <img class="lg:absolute -bottom-16 left-2 mx-auto mt-8" src="src/images/review.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="relative flex flex-row flex-wrap gap-24 bg-[#232631] overflow-hidden p-[103px] bg-[98%_100%] bg-no-repeat" style="background-image: url(src/images/footer-background.png)">
+      <div>
+        <img src="src/images/white logo.png" alt="" />
+        <p class="copyright mt-3">
+          Copyright © 2022. <br />
+          All Rights Reserved.
+        </p>
+      </div>
+      <div class="footer-menu">
+        <h5 class="footer-menu-title mb-4">Pages Menu</h5>
+        <ul class="grid gap-[14px]">
+          <li><a href="">Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">My Account</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <h5 class="footer-menu-title mb-4">Our Product</h5>
+        <ul class="grid gap-[14px]">
+          <li><a href="">Booking Flight</a></li>
+          <li><a href="">Booking Hotels</a></li>
+          <li><a href="">Trip Package</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <h5 class="footer-menu-title mb-4">Social Media</h5>
+        <ul class="grid gap-[14px]">
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Tiktok</a></li>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="dist\flowbite.js"></script>
+  </body>
+</html>
